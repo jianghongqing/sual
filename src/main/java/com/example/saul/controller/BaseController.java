@@ -1,7 +1,5 @@
 package com.example.saul.controller;
 
-import com.example.saul.exception.AjaxLoginException;
-import com.example.saul.exception.AjaxPermissionException;
 import com.example.saul.exception.MalciousException;
 import com.example.saul.exception.PermissionException;
 import com.example.saul.utils.AjaxResult;
