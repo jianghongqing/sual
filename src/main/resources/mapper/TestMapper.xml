@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.saul.dao.TestMapper">
+    <select id="getPersonById" parameterType="java.lang.Integer" resultType="java.util.Map">
+        select person_id as personId, wx_name as wxName, phone as phone,  ifnull(car_num,"") as carNum, password,
+        open_id as openId, register_time as registerTime,shift_status as  shiftStatus,is_substitute as isSubstitute
+        from person  where  person_id = #{personId}
+    </select>
+
+    <select id="ss">
+        select person_id, wx_name, phone, car_num, password, open_id, register_time, battery_serial_num, shift_status, is_substitute  from person
+    </select>
+</mapper>
